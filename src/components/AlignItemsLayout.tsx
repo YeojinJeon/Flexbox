@@ -1,6 +1,6 @@
-import React, { PropsWithChildren, useState } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { styles } from '../style';
+import React, { useState } from 'react';
+import { View, TouchableOpacity, Text } from 'react-native';
+import { PreviewLayoutProps, styles } from '../style';
 
 const AlignItemsLayout = () => {
     const [alignItems, setAlignItems] = useState('stretch');
@@ -23,13 +23,6 @@ const AlignItemsLayout = () => {
         </PreviewLayout>
     );
 };
-
-type PreviewLayoutProps = PropsWithChildren<{
-    label: string;
-    values: string[];
-    selectedValue: string;
-    setSelectedValue: (value: string) => void;
-}>;
 
 const PreviewLayout = ({
     label,

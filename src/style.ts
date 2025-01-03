@@ -1,4 +1,12 @@
 import { StyleSheet } from 'react-native';
+import type { PropsWithChildren } from 'react';
+
+export type PreviewLayoutProps = PropsWithChildren<{
+    label: string;
+    values: string[];
+    selectedValue: string;
+    setSelectedValue: (value: string) => void;
+}>;
 
 export const styles = StyleSheet.create({
     container: {

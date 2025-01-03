@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import type { PropsWithChildren } from 'react';
-import { styles } from '../style';
+import { PreviewLayoutProps, styles } from '../style';
 
 const FlexDirectionBasics = () => {
     const [flexDirection, setflexDirection] = useState('column');
@@ -19,13 +18,6 @@ const FlexDirectionBasics = () => {
         </PreviewLayout>
     );
 };
-
-type PreviewLayoutProps = PropsWithChildren<{
-    label: string;
-    values: string[];
-    selectedValue: string;
-    setSelectedValue: (value: string) => void;
-}>;
 
 const PreviewLayout = ({
     label,

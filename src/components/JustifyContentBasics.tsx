@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import type { PropsWithChildren } from 'react';
-import { styles } from '../style';
+import { View, TouchableOpacity, Text } from 'react-native';
+import { PreviewLayoutProps, styles } from '../style';
 
 const JustifyContentBasics = () => {
     const [justifyContent, setJustifyContent] = useState('flex-start');
@@ -26,13 +25,6 @@ const JustifyContentBasics = () => {
         </PreviewLayout>
     );
 };
-
-type PreviewLayoutProps = PropsWithChildren<{
-    label: string;
-    values: string[];
-    selectedValue: string;
-    setSelectedValue: (value: string) => void;
-}>;
 
 const PreviewLayout = ({
     label,
