@@ -1,10 +1,10 @@
 import { SafeAreaView, StyleSheet } from 'react-native';
-import JustifyContentBasics from './src/components/JustifyContentBasics';
+import AlignItemsLayout from './src/components/AlignItemsLayout';
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
-            <JustifyContentBasics />
+            <AlignItemsLayout />
         </SafeAreaView>
     );
 }
