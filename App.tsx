@@ -1,10 +1,10 @@
 import { SafeAreaView, StyleSheet } from 'react-native';
-import FlexDirectionBasics from './src/components/FlexDirectionBasics';
+import JustifyContentBasics from './src/components/JustifyContentBasics';
 
 export default function App() {
     return (
         <SafeAreaView style={styles.container}>
-            <FlexDirectionBasics />
+            <JustifyContentBasics />
         </SafeAreaView>
     );
 }

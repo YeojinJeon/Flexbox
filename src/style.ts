@@ -30,9 +30,10 @@ export const styles = StyleSheet.create({
         borderWidth: 0,
     },
     buttonLabel: {
-        fontSize: 12,
+        fontSize: 15,
         fontWeight: '500',
         color: 'coral',
+        height: 30,
     },
     selectedLabel: {
         color: 'white',
