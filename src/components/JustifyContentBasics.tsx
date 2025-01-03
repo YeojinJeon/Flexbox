@@ -64,7 +64,12 @@ const PreviewLayout = ({
                 </TouchableOpacity>
             ))}
         </View>
-        <View style={[styles.container, { [label]: selectedValue }]}>
+        <View
+            style={[
+                styles.container,
+                { flexDirection: 'row', [label]: selectedValue },
+            ]}
+        >
             {children}
         </View>
     </View>
